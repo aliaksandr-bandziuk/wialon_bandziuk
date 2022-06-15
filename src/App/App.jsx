@@ -4,6 +4,7 @@ import './App.scss';
 
 import Header from "../Header";
 import Description from "../Description";
+import Options from "../Options";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Header />
       <main>
         <Description />
+        <Options />
       </main>
     </>
   )

@@ -1,0 +1,63 @@
+@import '../App/vars';
+@import '../App/base';
+
+.options {
+  margin-bottom: 7.5rem;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.75rem;
+    margin-bottom: 7.5rem;
+    .content__text {
+      flex: 1 1 50%;
+      h2 {
+        font-family: 'GraphikLCG-Bold';
+        font-weight: 700;
+        font-size: 2.6rem;
+        line-height: 3.25rem;
+        color: $colorTitle;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        color: $colorText;
+      }
+    }
+    .content__pic {
+      flex: 1 1 50%;
+    }
+  }
+  &__trackers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.37rem;
+    @media (max-width: 1000px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 690px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .tracker {
+      img {
+        margin-bottom: 2.25rem;
+      }
+      h3 {
+        font-family: 'GraphikLCG-Bold';
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: $colorText;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 1.75rem;
+        color: $colorText;
+      }
+    }
+  }
+}
