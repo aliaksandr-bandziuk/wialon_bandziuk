@@ -1,4 +1,6 @@
+@import '../fonts/font.scss';
 @import 'vars';
+@import 'base';
 
 * {
   margin: 0;
@@ -11,6 +13,14 @@ html {
   @media (min-width: 600px) {
     font-size: 16px;
   }
+}
+
+body {
+  font-family: 'GraphikLCG-Regular';
+  line-height: 1;
+  color: $colorText;
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 a {
