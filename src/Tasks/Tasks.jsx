@@ -2,6 +2,10 @@ import React from 'react';
 
 import './Tasks.scss';
 
+// import MuiTabs from './/MuiTabs';
+
+import MuiTabs from '../MuiTabs';
+
 import Task from '../Task';
 import { TaskTextTop, TaskNumber, TaskTextBottom } from '../Task/Task';
 
@@ -12,6 +16,9 @@ const Tasks = () => {
         <h2>
           Решайте любую задачу с системой мониторинга автотранспорта Wialon
         </h2>
+        <div className="tasks__tabs">
+          <MuiTabs />
+        </div>
         <div className="tasks__data">
           <Task>
             <TaskTextTop>более</TaskTextTop>

@@ -12,6 +12,9 @@
     max-width: 80%;
     margin-bottom: 40px;
   }
+  &__tabs {
+    margin-bottom: $blockDistance;
+  }
   &__data {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
