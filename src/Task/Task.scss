@@ -1,0 +1,21 @@
+@import '../App/vars';
+@import '../App/base';
+
+.task {
+  padding-top: 20px;
+  border-top: 1px solid $colorBorder;
+  &__text {
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    color: $colorText;
+  }
+  &__number {
+    font-family: 'GraphikLCG-Bold';
+    font-size: 3.25rem;
+    line-height: 3.5rem;
+    color: $colorText;
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    color: $colorTitle;
+  }
+}

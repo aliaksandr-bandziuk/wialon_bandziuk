@@ -4,6 +4,7 @@ import './App.scss';
 
 import Header from "../Header";
 import Description from "../Description";
+import Tasks from "../Tasks";
 import Options from "../Options";
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <Header />
       <main>
         <Description />
+        <Tasks />
         <Options />
       </main>
     </>
