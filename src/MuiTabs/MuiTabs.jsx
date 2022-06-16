@@ -5,6 +5,8 @@ import { useState } from 'react';
 
 import './MuiTabs.scss';
 
+import { ImagerDisplay, imagerShow, ImagerImg } from '../imager/index.js'
+
 import tabImg1 from '../images/tab1.jpg';
 import tabImg2 from '../images/tab2.jpg';
 import tabImg3 from '../images/tab3.jpg';
@@ -43,22 +45,39 @@ const MuiTabs = () => {
           </TabList>
         </Box>
         <TabPanel value='1'>
-          <img src={tabImg1} alt="Tab 1" />
+          <ImagerDisplay z-index="2000" />
+            <ImagerImg src={tabImg1} alt="Tab 1">
+          </ImagerImg>
         </TabPanel>
         <TabPanel value='2'>
-          <img src={tabImg2} alt="Tab 2" />
+          <ImagerDisplay z-index="2000" />
+            <ImagerImg src={tabImg2} alt="Tab 2">
+          </ImagerImg>
+          {/* <img src={tabImg2} alt="Tab 2" /> */}
         </TabPanel>
         <TabPanel value='3'>
-          <img src={tabImg3} alt="Tab 3" />
+          <ImagerDisplay z-index="2000" />
+            <ImagerImg src={tabImg3} alt="Tab 3">
+          </ImagerImg>
+          {/* <img src={tabImg3} alt="Tab 3" /> */}
         </TabPanel>
         <TabPanel value='4'>
-          <img src={tabImg4} alt="Tab 4" />
+          <ImagerDisplay z-index="2000" />
+            <ImagerImg src={tabImg4} alt="Tab 4">
+          </ImagerImg>
+          {/* <img src={tabImg4} alt="Tab 4" /> */}
         </TabPanel>
         <TabPanel value='5'>
-          <img src={tabImg5} alt="Tab 5" />
+          <ImagerDisplay z-index="2000" />
+            <ImagerImg src={tabImg5} alt="Tab 5">
+          </ImagerImg>
+          {/* <img src={tabImg5} alt="Tab 5" /> */}
         </TabPanel>
         <TabPanel value='6'>
-          <img src={tabImg6} alt="Tab 6" />
+          <ImagerDisplay z-index="2000" />
+            <ImagerImg src={tabImg6} alt="Tab 6">
+          </ImagerImg>
+          {/* <img src={tabImg6} alt="Tab 6" /> */}
         </TabPanel>
       </TabContext>
     </Box>
