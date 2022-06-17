@@ -6,6 +6,7 @@ import Header from "../Header";
 import Description from "../Description";
 import Tasks from "../Tasks";
 import Options from "../Options";
+import Footer from "../Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
         <Tasks />
         <Options />
       </main>
+      <Footer />
     </>
   )
 }

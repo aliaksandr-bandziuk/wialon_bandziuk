@@ -1,0 +1,37 @@
+@import '../App/vars';
+@import '../App/base';
+
+.footer {
+  position: relative;
+  &__container {
+    h2 {
+      font-family: 'GraphikLCG-Bold';
+      font-size: 2.6rem;
+      line-height: 3.25rem;
+      color: $colorTitle;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+  }
+  &__wrapper {
+    .footer__map {
+      position: relative;
+      height: 500px;
+      .map__search {
+        position: absolute;
+        top: 35px;
+        margin: auto 50% 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transform: translate(-50%);
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    }
+    // .footer__search {
+    //   position: absolute;
+    //   max-width: 960px;
+    //   margin: 0 auto;
+    // }
+  }
+}

@@ -1,0 +1,31 @@
+@import '../App/vars';
+@import '../App/base';
+
+.form {
+  display: flex;
+  gap: 8px;
+  &__select {
+    width: 400px;
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
+    border: 1px solid $colorBorder;
+    border-radius: 8px;
+    padding: 1rem;
+    color: $colorTitle;
+    font-size: 1.1rem;
+    &::before {
+      content: "hello";
+      padding-left: 20px;
+      padding-right: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    option {
+      
+    }
+  }
+  button {
+    border: none;
+    margin: 0;
+    // padding: 0;
+  }
+}
