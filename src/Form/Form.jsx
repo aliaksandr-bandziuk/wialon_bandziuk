@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 
 import './Form.scss';
 
+import DataApiCountries from '../DataApi/DataApiCountries.jsx';
+import DataApiCities from '../DataApi/DataApiCities.jsx';
+
 import ButtonPrimary from '../ButtonPrimary';
 
 const countriesData = [
@@ -48,14 +51,8 @@ const Form = () => {
 
   return (
     <form onSubmit={() => console.log("Submitted")} className="form">
-      <select value={country} onChange={handleCountryChange} name="country" id="country" className="form__select">
-        <option value="" disabled selected hidden>Выберите страну</option>
-        {countries}
-      </select>
-      <select value={state} onChange={handleStateChange} name="city" id="city" className="form__select">
-        <option value="" disabled selected hidden>Выберите город</option>
-        {states}
-      </select>
+      <DataApiCountries />
+      <DataApiCities />
       <button type="submit">
         <ButtonPrimary>Найти офис</ButtonPrimary>
       </button>
