@@ -11,7 +11,7 @@ import { TaskTextTop, TaskNumber, TaskTextBottom } from '../Task/Task';
 
 const Tasks = () => {
   return (
-    <section className="tasks">
+    <section className="tasks" id="tasks">
       <div className="tasks__container">
         <h2>
           Решайте любую задачу с системой мониторинга автотранспорта Wialon

@@ -8,7 +8,7 @@ import DataApiSelect from '../DataApi/DataApiSelect.js';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div className="footer__container">
         <h2>Найти офис в своем регионе</h2>
       </div>

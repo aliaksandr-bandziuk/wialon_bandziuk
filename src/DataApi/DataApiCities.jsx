@@ -40,7 +40,7 @@ export default class DataApiCities extends Component {
     } else {
       return (
         <select>
-          <option value="" disabled selected hidden>Выберите город</option>
+          <option value="" disabled selected hidden>Choose city</option>
           {items.map(item => (
             <option key={item.name}>
               {item.name}

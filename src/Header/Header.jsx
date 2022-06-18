@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { HashLink } from 'react-router-hash-link';
 
 import './Header.scss';
 
@@ -9,7 +10,7 @@ import logo from '../images/wialon_logo.svg';
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header" id="header">
       <div className="container">
         <nav className="navbar">
           <div className="navbar__wrapper">
@@ -22,28 +23,35 @@ const Header = () => {
             <div className="menu__items">
               <ul className="menu__items-data">
                 <li className="menu__item">
-                  <a href="#">Система Wialon</a>
+                  <HashLink smooth to="#top">Система Wialon</HashLink>
+                  {/* <a href="#">Система Wialon</a> */}
                 </li>
                 <li className="menu__item menu__item-note">
-                  <a href="#">Сферы</a>
+                  {/* <a href="#">Сферы</a> */}
+                  <HashLink smooth to="#tasks">Сферы</HashLink>
                 </li>
                 <li className="menu__item menu__item-note">
-                  <a href="#">Проекты</a>
+                  {/* <a href="#">Проекты</a> */}
+                  <HashLink smooth to="#options">Проекты</HashLink>
                 </li>
                 <li className="menu__item menu__item-note">
-                  <a href="#">Решения</a>
+                  {/* <a href="#">Решения</a> */}
+                  <HashLink smooth to="#solutions">Решения</HashLink>
                 </li>
                 <li className="menu__item menu__item-note">
-                  <a href="#">Контакты</a>
+                  {/* <a href="#">Контакты</a> */}
+                  <HashLink smooth to="#footer">Контакты</HashLink>
                 </li>
               </ul>
               <div className="menu__items-data buttons">
                 <ButtonSecondary>
                   Получить демо
                 </ButtonSecondary>
-                <ButtonPrimary>
-                  Заказать
-                </ButtonPrimary>
+                <HashLink smooth to="#footer">
+                  <ButtonPrimary>
+                    Заказать
+                  </ButtonPrimary>
+                </HashLink>
                 {/* <div className="menu__item menu__item-select dropdown">
                   <p><a href="#">Payments</a></p>
                   <div className="dropdown__content">

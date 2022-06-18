@@ -12,7 +12,7 @@ import icon6 from '../images/icon6.png';
 
 const Options = () => {
   return (
-    <section className="options">
+    <section className="options" id="options">
       <div className="options__container">
         <div className="options__content content">
           <div className="content__text">
@@ -25,7 +25,7 @@ const Options = () => {
             <img src={trackers} alt="Трекеры Wialon" />
           </div>
         </div>
-        <div className="options__trackers trackers">
+        <div className="options__trackers trackers" id="solutions">
           <div className="tracker">
             <img src={icon1} alt="GPS/ГЛОНАСС трекеры" />
             <h3>GPS/ГЛОНАСС трекеры</h3>
