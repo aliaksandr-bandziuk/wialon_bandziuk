@@ -36,7 +36,7 @@ export default class DataApiCities extends Component {
     if (error) {
       return <p>Ошибка связи: {error.message}</p>
     } else if (!isLoaded) {
-      return <p>Загрузка данных...</p>
+      return <p>Загружаю города...</p>
     } else {
       return (
         <select>

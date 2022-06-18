@@ -53,6 +53,18 @@ const Form = () => {
     <form onSubmit={() => console.log("Submitted")} className="form">
       <DataApiCountries />
       <DataApiCities />
+
+      {/* check */}
+      {/* <select value={state} onChange={handleStateChange} name="city" id="city" className="form__select">
+        <option value="" disabled selected hidden>Выберите город</option>
+        {states}
+      </select>
+      <select value={state} onChange={handleStateChange} name="city" id="city" className="form__select">
+        <option value="" disabled selected hidden>Выберите город</option>
+        {states}
+      </select> */}
+      {/* check */}
+
       <button type="submit">
         <ButtonPrimary>Найти офис</ButtonPrimary>
       </button>

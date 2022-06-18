@@ -4,6 +4,7 @@ import './Footer.scss';
 
 import YMap from '../YMap';
 import Form from '../Form';
+import DataApiSelect from '../DataApi/DataApiSelect.js';
 
 const Footer = () => {
   return (
@@ -16,10 +17,10 @@ const Footer = () => {
           <YMap />
           <div className="map__search">
             <Form />
+            {/* <DataApiSelect /> */}
           </div>
         </div>
       </div>
-      
     </footer>
   )
 }

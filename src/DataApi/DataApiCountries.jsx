@@ -33,10 +33,12 @@ export default class DataApiCountries extends Component {
 
   render() {
     const { error, isLoaded, items } = this.state;
+    let id = items.map(item => item.id);
+    console.log(id);
     if (error) {
       return <p>Ошибка связи: {error.message}</p>
     } else if (!isLoaded) {
-      return <p>Загрузка данных...</p>
+      return <p>Загружаю страны...</p>
     } else {
       return (
         <select>
