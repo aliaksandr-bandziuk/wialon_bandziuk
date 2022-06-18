@@ -3,8 +3,8 @@ import React from 'react';
 import './Footer.scss';
 
 import YMap from '../YMap';
-import Form from '../Form';
-import DataApiSelect from '../DataApi/DataApiSelect.js';
+
+import GetConurtyCity from '../GetCountryCity';
 
 const Footer = () => {
   return (
@@ -16,8 +16,7 @@ const Footer = () => {
         <div className="footer__map map">
           <YMap />
           <div className="map__search">
-            <Form />
-            {/* <DataApiSelect /> */}
+            <GetConurtyCity />
           </div>
         </div>
       </div>

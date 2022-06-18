@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 
-import './Form.scss';
+import './GetCountryCity.scss';
 
-import DataApiCountries from '../DataApi/DataApiCountries.jsx';
-import DataApiCities from '../DataApi/DataApiCities.jsx';
+import GetConurtyCity from './GetConurtyCity';
+
+// import DataApiCountries from '../DataApi/DataApiCountries.jsx';
+// import DataApiCities from '../DataApi/DataApiCities.jsx';
 
 import ButtonPrimary from '../ButtonPrimary';
 
@@ -51,8 +53,8 @@ const Form = () => {
 
   return (
     <form onSubmit={() => console.log("Submitted")} className="form">
-      <DataApiCountries />
-      <DataApiCities />
+      {/* <DataApiCountries />
+      <DataApiCities /> */}
 
       {/* check */}
       {/* <select value={state} onChange={handleStateChange} name="city" id="city" className="form__select">
@@ -64,8 +66,8 @@ const Form = () => {
         {states}
       </select> */}
       {/* check */}
-
-      <button type="submit">
+      <GetConurtyCity />
+      <button type="submit" className='button__submit'>
         <ButtonPrimary>Найти офис</ButtonPrimary>
       </button>
     </form>
