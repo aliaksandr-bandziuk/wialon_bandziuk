@@ -25,8 +25,9 @@ const MuiTabs = () => {
         <Box>
           <TabList aria-label='Tabs' 
             onChange={handleChange}
-            // variant="scrollable" 
-            // scrollButtons="auto"
+            variant="scrollable" 
+            scrollButtons="auto"
+            allowScrollButtonsMobile
             indicatorColor='none'
           >
             <Tab 

@@ -20,12 +20,14 @@
       .map__search {
         position: absolute;
         top: 35px;
-        margin: auto 50% 0;
         left: 50%;
         transform: translateX(-50%);
         transform: translate(-50%);
         max-width: 90%;
         margin: 0 auto;
+        @media (max-width: 768px) {
+          width: 100%;
+        }
       }
     }
     // .footer__search {

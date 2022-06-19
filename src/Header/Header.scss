@@ -26,6 +26,9 @@
         justify-content: space-between;
         align-items: center;
         gap: 40px;
+        @media (max-width: 1020px) {
+          gap: 20px;
+        }
         .menu__items {
           width: 100%;
           order: 2;
@@ -35,6 +38,9 @@
           &-data {
             display: flex;
             gap: 40px;
+            @media (max-width: 1020px) {
+              gap: 20px;
+            }
           }
           // &-data-right {
           //   gap: 20px;
@@ -46,6 +52,9 @@
             display: flex;
             align-items: center;
             transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            @media (max-width: 900px) {
+              font-size: 0.8rem;
+            }
             a {
               &::after {
                 content: "";
@@ -79,7 +88,6 @@
         .navbar__wrapper input[type="checkbox"],
         .navbar__wrapper .hamburger-lines {
           display: block;
-          // margin-top: 25px;
         }
       
         .navbar__wrapper {

@@ -3,6 +3,9 @@
 
 .tasks {
   padding-bottom: $blockDistance;
+  @media (max-width: 768px) {
+    padding-bottom: $blockDistanceMobile;
+  }
   h2 {
     font-family: 'GraphikLCG-Bold';
     font-weight: 700;
@@ -14,6 +17,9 @@
   }
   &__tabs {
     margin-bottom: $blockDistance;
+    @media (max-width: 768px) {
+      margin-bottom: $blockDistanceMobile;
+    }
   }
   &__data {
     display: grid;

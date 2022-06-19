@@ -10,6 +10,9 @@
   &__content {
     max-width: 70%;
     margin-bottom: $blockDistance;
+    @media (max-width: 768px) {
+      margin-bottom: $blockDistanceMobile;
+    }
     h1 {
       font-family: 'GraphikLCG-Bold';
       font-weight: 700;

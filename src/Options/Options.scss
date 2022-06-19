@@ -3,12 +3,18 @@
 
 .options {
   margin-bottom: $blockDistance;
+  @media (max-width: 768px) {
+    margin-bottom: $blockDistanceMobile;
+  }
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 3.75rem;
     margin-bottom: $blockDistance;
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
     .content__text {
       flex: 1 1 50%;
       h2 {
@@ -35,6 +41,9 @@
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 3.37rem;
     .tracker {
+      @media (max-width: 370px) {
+        width: 90%;
+      }
       img {
         margin-bottom: 2.25rem;
       }

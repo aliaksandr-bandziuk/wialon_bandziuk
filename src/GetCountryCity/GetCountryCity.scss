@@ -4,6 +4,7 @@
 .form {
   display: flex;
   gap: 8px;
+  width: 100%;
   &__select {
     width: 400px;
     filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
@@ -12,18 +13,14 @@
     padding: 1rem;
     color: $colorTitle;
     font-size: 1.1rem;
-    &::before {
-      content: "hello";
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-left: 20px;
-      margin-right: 20px;
+    @media (max-width: 1000px) {
+      width: 100%;
     }
     // option {
       
     // }
   }
-  button {
+  .button__submit {
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
@@ -31,6 +28,16 @@
     background-color: $colorButton;
     border: none;
     border-radius: 8px;
+    padding: 16px 20px;
     width: 145px;
+    cursor: pointer;
+    @media (max-width: 1000px) {
+      width: 100%;
+    }
+
+  }
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    width: 80%;
   }
 }
