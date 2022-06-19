@@ -3,6 +3,7 @@
 
 .options {
   margin-bottom: $blockDistance;
+  background-color: #F7F7F5;
   @media (max-width: 768px) {
     margin-bottom: $blockDistanceMobile;
   }
@@ -11,9 +12,9 @@
     justify-content: space-between;
     align-items: center;
     gap: 3.75rem;
-    margin-bottom: $blockDistance;
     @media (max-width: 768px) {
       flex-direction: column-reverse;
+      padding-bottom: 30px;
     }
     .content__text {
       flex: 1 1 50%;
@@ -40,6 +41,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 3.37rem;
+    margin-bottom: $blockDistance;
+    @media (max-width: 768px) {
+      margin-bottom: $blockDistanceMobile;
+    }
     .tracker {
       @media (max-width: 370px) {
         width: 90%;

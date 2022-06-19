@@ -41,8 +41,11 @@ const MuiTabs = () => {
             <Tab label='Контроль топлива' value='2' />
             <Tab label='Контроль прохождения маршрутов' value='3' />
             <Tab label='Мониторинг активности сотрудников' value='4' />
-            <Tab label='Контроль эксплуатации автопарка' value='5' />
+            <Tab label='Контроль эксплуатации' value='5' />
             <Tab label='Анализ параметров датчиков' value='6' />
+            <Tab label='Контроль территорий эксплуатации' value='7' />
+            <Tab label='Система контроля маршрутного транспорта' value='8' />
+            <Tab label='Контроль качества вождения' value='9' />
           </TabList>
         </Box>
         <TabPanel value='1'>
@@ -77,6 +80,24 @@ const MuiTabs = () => {
         <TabPanel value='6'>
           <ImagerDisplay z-index="2000" />
             <ImagerImg src={tabImg6} alt="Tab 6">
+          </ImagerImg>
+          {/* <img src={tabImg6} alt="Tab 6" /> */}
+        </TabPanel>
+        <TabPanel value='7'>
+          <ImagerDisplay z-index="2000" />
+            <ImagerImg src={tabImg6} alt="Tab 7">
+          </ImagerImg>
+          {/* <img src={tabImg6} alt="Tab 6" /> */}
+        </TabPanel>
+        <TabPanel value='8'>
+          <ImagerDisplay z-index="2000" />
+            <ImagerImg src={tabImg6} alt="Tab 8">
+          </ImagerImg>
+          {/* <img src={tabImg6} alt="Tab 6" /> */}
+        </TabPanel>
+        <TabPanel value='9'>
+          <ImagerDisplay z-index="2000" />
+            <ImagerImg src={tabImg6} alt="Tab 9">
           </ImagerImg>
           {/* <img src={tabImg6} alt="Tab 6" /> */}
         </TabPanel>

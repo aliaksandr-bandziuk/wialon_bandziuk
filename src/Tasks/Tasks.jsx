@@ -14,7 +14,7 @@ const Tasks = () => {
     <section className="tasks" id="tasks">
       <div className="tasks__container">
         <h2>
-          Решайте любую задачу с системой мониторинга автотранспорта Wialon
+          Решайте любую задачу с системой мониторинга объектов Wialon
         </h2>
         <div className="tasks__tabs">
           <MuiTabs />
@@ -27,18 +27,18 @@ const Tasks = () => {
           </Task>
           <Task>
             <TaskTextTop>более</TaskTextTop>
-            <TaskNumber>690 тыс</TaskNumber>
-            <TaskTextBottom>подключенных объектов в России и СНГ</TaskTextBottom>
+            <TaskNumber>150 стран,</TaskNumber>
+            <TaskTextBottom>где используется Wialon</TaskTextBottom>
           </Task>
           <Task>
             <TaskTextTop>более</TaskTextTop>
-            <TaskNumber>2.2 тыс</TaskNumber>
-            <TaskTextBottom>моделей оборудования, с которыми работаем</TaskTextBottom>
+            <TaskNumber>695 тыс</TaskNumber>
+            <TaskTextBottom>подключенных транспортных средств в России и СНГ</TaskTextBottom>
           </Task>
           <Task>
-            <TaskTextTop>до</TaskTextTop>
-            <TaskNumber>135 стран</TaskNumber>
-            <TaskTextBottom>где используется Wialon</TaskTextBottom>
+            <TaskTextTop>более</TaskTextTop>
+            <TaskNumber>2.6 тыс</TaskNumber>
+            <TaskTextBottom>моделей оборудования, с которыми работаем</TaskTextBottom>
           </Task>
         </div>
       </div>

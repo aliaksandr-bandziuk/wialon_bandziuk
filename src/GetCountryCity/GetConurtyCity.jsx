@@ -3,8 +3,6 @@ import Select from 'react-select';
 
 import './GetCountryCity.scss';
 
-import location from '../images/location.svg';
-
 const GetConurtyCity = () => {
 
   const [country, setCountry] = useState([]);
