@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/wialon_bandziuk/static/css/main.a60ec6d4.css",
+    "main.css": "/wialon_bandziuk/static/css/main.900a4353.css",
     "main.js": "/wialon_bandziuk/static/js/main.e5d05275.js",
     "static/media/main-pic.jpg": "/wialon_bandziuk/static/media/main-pic.302e13bbc30509d76b46.jpg",
     "static/media/tab6.jpg": "/wialon_bandziuk/static/media/tab6.658a2bb7b4f59b638244.jpg",
@@ -18,11 +18,11 @@
     "static/media/wialon_logo.svg": "/wialon_bandziuk/static/media/wialon_logo.88e37ff347c2e2b2e10bca114db460b9.svg",
     "static/media/loader.svg": "/wialon_bandziuk/static/media/loader.9d839992080fec81d155.svg",
     "index.html": "/wialon_bandziuk/index.html",
-    "main.a60ec6d4.css.map": "/wialon_bandziuk/static/css/main.a60ec6d4.css.map",
+    "main.900a4353.css.map": "/wialon_bandziuk/static/css/main.900a4353.css.map",
     "main.e5d05275.js.map": "/wialon_bandziuk/static/js/main.e5d05275.js.map"
   },
   "entrypoints": [
-    "static/css/main.a60ec6d4.css",
+    "static/css/main.900a4353.css",
     "static/js/main.e5d05275.js"
   ]
 }
