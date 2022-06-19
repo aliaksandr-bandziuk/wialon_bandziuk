@@ -5,21 +5,67 @@
   display: flex;
   gap: 8px;
   width: 100%;
-  &__select {
-    width: 400px;
-    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
-    border: 1px solid $colorBorder;
-    border-radius: 8px;
-    padding: 1rem;
-    color: $colorTitle;
-    font-size: 1.1rem;
-    @media (max-width: 1000px) {
-      width: 100%;
+  .custom__dropdown {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    .form__select {
+      position: relative;
+      width: 400px;
+      filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
+      border: 1px solid $colorBorder;
+      border-radius: 8px;
+      padding: 1rem;
+      padding-left: 46px;
+      color: $colorTitle;
+      font-size: 1.1rem;
+      @media (max-width: 1000px) {
+        width: 100%;
+      }
+      // option {
+        
+      // }
     }
-    // option {
-      
-    // }
+    &::after {
+      content: url("../images/location.png");
+      position: absolute;
+      left: 1rem;
+      top: 1rem;
+    }
+    &::before {
+      content: "▼";
+      position: absolute;
+      right: 0;
+      top: 1.2rem;
+      font-size: 1rem;
+      // color:$colorTitle;
+      z-index: 1;
+      padding-right: 5px;
+      background-color: #fff;
+    }
   }
+  // &__select {
+  //   position: relative;
+  //   width: 400px;
+  //   filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.2));
+  //   border: 1px solid $colorBorder;
+  //   border-radius: 8px;
+  //   padding: 1rem;
+  //   color: $colorTitle;
+  //   font-size: 1.1rem;
+  //   @media (max-width: 1000px) {
+  //     width: 100%;
+  //   }
+  //   &::before{
+  //     content: url('../images/location.svg');
+  //     position: absolute;
+  //     left: 2px;
+  //     top: 2px;
+  //   }
+  //   // option {
+      
+  //   // }
+  // }
   .button__submit {
     font-weight: 500;
     font-size: 18px;

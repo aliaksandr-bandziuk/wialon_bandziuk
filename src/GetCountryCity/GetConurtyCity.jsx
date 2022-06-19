@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import Select from 'react-select';
 
 import './GetCountryCity.scss';
+
+import location from '../images/location.svg';
 
 const GetConurtyCity = () => {
 
@@ -37,43 +40,49 @@ const GetConurtyCity = () => {
     getCity();
   },[countryId]);
 
-  let type = null;
-  let options = null;
-
-  if (selected.value !== "Выберите страну") {
-    type = 'responseCountry';
-  }
-
-  if (type) {
-    options = country.map( (item, index) => (
-      <option key={index} value={item.id}>
-        {item.name}
-      </option>
-    ))
-  }
+  // не получилось вывести опции для react-select
+  const optionsCountries = country.map( (item, index) => (
+    <option key={index} value={item.id}>
+      {item.name}
+    </option>
+  ));
+  // не получилось вывести опции для react-select
+  const optionsCities = city.map( (item, index) => (
+    <option key={index} value={item.id}>
+      {item.name}
+    </option>
+  ));
 
   return (
     <form className="form">
-      <select className="form__select" onChange={ (e) => handleCountry(e)}>
+      <span className="custom__dropdown">
+        <select className="form__select" onChange={ (e) => handleCountry(e)}>
+          <option value="Выберите страну" disabled selected hidden>Выберите страну</option>
+          {
+            optionsCountries
+          }
+        </select>
+      </span>
+      {/* <select className="form__select" onChange={ (e) => handleCountry(e)}>
         <option value="Выберите страну" disabled selected hidden>Выберите страну</option>
         {
-          country.map( (item, index) => (
-            <option key={index} value={item.id}>
-              {item.name}
-            </option>
-          ))
+          optionsCountries
         }
-      </select>
-      <select disabled={disabled} className="form__select">
+      </select> */}
+      <span className="custom__dropdown">
+        <select disabled={disabled} className="form__select">
+          <option value="" disabled selected hidden>Выберите город</option>
+          {
+            optionsCities
+          }
+        </select>
+      </span>
+      {/* <select disabled={disabled} className="form__select">
         <option value="" disabled selected hidden>Выберите город</option>
         {
-          city.map( (item, index) => (
-            <option key={index} value={item.id}>
-              {item.name}
-            </option>
-          ))
+          optionsCities
         }
-      </select>
+      </select> */}
       <button type="submit" className='button__submit'>Найти офис</button>
     </form>
   )
