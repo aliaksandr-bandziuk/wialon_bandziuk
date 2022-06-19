@@ -8,6 +8,9 @@ const GetConurtyCity = () => {
   const [countryId, setCountryId] = useState('');
   const [city, setCity] = useState([]);
 
+  const [selected, setSelected] = useState('');
+  const [disabled, setDisabled] = useState(true);
+
   useEffect( () => {
     const getCountry = async () => {
       const resCountry = await fetch('https://cs.wialon.com/svcs/regions/v1/countries?extended=1');
@@ -20,6 +23,9 @@ const GetConurtyCity = () => {
   const handleCountry = (event) => {
     const getConurtyId = event.target.value;
     setCountryId(getConurtyId);
+
+    setSelected(getConurtyId);
+    setDisabled(false);
   }
 
   useEffect( () => {
@@ -31,10 +37,25 @@ const GetConurtyCity = () => {
     getCity();
   },[countryId]);
 
+  let type = null;
+  let options = null;
+
+  if (selected.value !== "Выберите страну") {
+    type = 'responseCountry';
+  }
+
+  if (type) {
+    options = country.map( (item, index) => (
+      <option key={index} value={item.id}>
+        {item.name}
+      </option>
+    ))
+  }
+
   return (
     <form className="form">
       <select className="form__select" onChange={ (e) => handleCountry(e)}>
-        <option value="" disabled selected hidden>Выберите страну</option>
+        <option value="Выберите страну" disabled selected hidden>Выберите страну</option>
         {
           country.map( (item, index) => (
             <option key={index} value={item.id}>
@@ -43,7 +64,7 @@ const GetConurtyCity = () => {
           ))
         }
       </select>
-      <select className="form__select">
+      <select disabled={disabled} className="form__select">
         <option value="" disabled selected hidden>Выберите город</option>
         {
           city.map( (item, index) => (
