@@ -13,15 +13,24 @@ button.css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
   color: #fff;
 }
 
-.css-1q2h7u5.Mui-selected {
+button.css-1q2h7u5.Mui-selected {
   color: #fff;
 }
 
 button.css-1q2h7u5 {
-  background-color: #0071E3;
-  border-radius: 8px;
   text-transform: none;
-  color: #fff;
+  border: 1px solid #DBDBDB;
+  border-radius: 8px;  
+  font-size: 16px;
+  color: #242424;
+  padding: 18px 16px;
+  max-width: 220px;
+  text-align: left;
+  transition: all ease-in-out .2s;
+  &:hover {
+    color: #242424;
+    background-color: #F7F7F5;
+  }
 }
 
 button.css-1h9z7r5-MuiButtonBase-root-MuiTab-root {
